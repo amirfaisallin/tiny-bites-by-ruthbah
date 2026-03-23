@@ -3,9 +3,8 @@ import subprocess
 import os
 import sys
 
-# Set the working directory to the project root
-project_root = '/vercel/share/v0-project'
-os.chdir(project_root)
+# Project root is the current working directory
+project_root = os.getcwd()
 
 print(f'[v0] Starting dev server at {project_root}')
 print(f'[v0] Current directory: {os.getcwd()}')
